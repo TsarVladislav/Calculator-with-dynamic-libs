@@ -1,8 +1,74 @@
+/*!
+	\file operations.h
+	\brief Заголовочный файл для списка функций-операций.
+
+	Имена функций читаются отсюда
+	\author Vladislav Tsisyk
+	\version 1.0
+	\date Июль 2017
+
+*/
+
 #include <stdio.h>
+/*!
+ *  \brief указатель на функцию, которая принимает два параметра типа int
+ *	\param[int] операнд
+ *  \param[int] операнд
+ *  \return результат операции
+ *
+ * */
 typedef int (*twoi_t)(int, int);
-typedef int (*onei_t)(int);
-int sum(int, int);
-int mul(int, int);
-int sub(int, int);
-int mdiv(int, int);
-int factorial(int);
+/*!
+ *  \brief указатель на функцию, которая принимает один параметр типа int
+ *  \param[int] операнд
+ *  \return результат операции
+ * */
+
+typedef int (*onei_t)(
+    int);  ///< указатель на функцию, которая принимает один параметр типа int
+	   /*!
+	    *  \brief  операция сложения двух числен
+	    *  \param[int] операнд
+	    *  \param[int] операнд
+	    *  \return результат операции
+	    * */
+
+int sum(int, int);  ///< сложение
+		    /*!
+		     *  \brief  операция сложения двух целочисленных чисел
+		     *  \param[int] операнд
+		     *  \param[int] операнд
+		     *  \return результат операции
+		     * */
+
+int mul(int, int);  ///< умножение
+		    /*!
+		     *  \brief  операция умножения двух целочисленных чисел
+		     *  \param[int] операнд
+		     *  \param[int] операнд
+		     *  \return результат операции
+		     * */
+
+int sub(int, int);  ///< вычитание
+		    /*!
+		     *  \brief  операция вычитания двух целочисленных чисел
+		     *  \param[int] операнд
+		     *  \param[int] операнд
+		     *  \return результат операции
+		     * */
+
+int mdiv(int, int);  ///< деление
+		     /*!
+		      *  \brief  операция деление двух целочисленных чисел
+		      *  \param[int] операнд
+		      *  \param[int] операнд
+		      *  \return результат операции
+		      * */
+
+int factorial(int);  ///< факториал
+
+/*!
+ *  \brief Факториал
+ *  \param[int] операнд
+ *  \return результат операции
+ * */
