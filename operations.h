@@ -25,7 +25,7 @@ typedef int (*twoi_t)(int, int);
  * */
 
 typedef int (*onei_t)(
-    int);  ///< указатель на функцию, которая принимает один параметр типа int
+    int);
 	   /*!
 	    *  \brief  операция сложения двух числен
 	    *  \param[int] операнд
@@ -33,7 +33,7 @@ typedef int (*onei_t)(
 	    *  \return результат операции
 	    * */
 
-int sum(int, int);  ///< сложение
+int sum(int, int);
 		    /*!
 		     *  \brief  операция сложения двух целочисленных чисел
 		     *  \param[int] операнд
@@ -41,7 +41,7 @@ int sum(int, int);  ///< сложение
 		     *  \return результат операции
 		     * */
 
-int mul(int, int);  ///< умножение
+int mul(int, int);
 		    /*!
 		     *  \brief  операция умножения двух целочисленных чисел
 		     *  \param[int] операнд
@@ -49,7 +49,7 @@ int mul(int, int);  ///< умножение
 		     *  \return результат операции
 		     * */
 
-int sub(int, int);  ///< вычитание
+int sub(int, int);
 		    /*!
 		     *  \brief  операция вычитания двух целочисленных чисел
 		     *  \param[int] операнд
@@ -57,7 +57,7 @@ int sub(int, int);  ///< вычитание
 		     *  \return результат операции
 		     * */
 
-int mdiv(int, int);  ///< деление
+int mdiv(int, int); 
 		     /*!
 		      *  \brief  операция деление двух целочисленных чисел
 		      *  \param[int] операнд
@@ -65,7 +65,7 @@ int mdiv(int, int);  ///< деление
 		      *  \return результат операции
 		      * */
 
-int factorial(int);  ///< факториал
+int factorial(int);
 
 /*!
  *  \brief Факториал

@@ -13,19 +13,40 @@
 #include <stdlib.h>
 #include <string.h>
 #include "operations.h"
-#define LPATH \
-	"lib/"      ///< захардкоженый путь до динамических библиотек.make создаст
-		    ///папку.
-#define STRLEN 256  ///< \brief Максимальная длина пути
+ /*! 
+  * захардкоженый путь до динамических библиотек.make создастпапку.
+  */
+#define LPATH "lib/"
+/*!
+ * \brief Максимальная длина пути
+ *
+ */
+#define STRLEN 256 
 
 /*!
  *  \brief Тип для хранения информации о загруженной динамической библиотеке
  * */
 typedef struct {
-	char name[STRLEN];  ///< \brief Имя функции
-	char path[STRLEN];  ///< \brief Путь до файла, в котором лежит функция
-	void *handle;       ///<  "handle" for the dynamic library. man dlopen
-	void *f;  ///< адрес функции в памяти. man dlsym
+
+
+	/*!
+	 * \brief Имя функции
+	 */
+	char name[STRLEN];
+
+	/*!
+	 * \brief Путь до файла, в котором лежит функция
+	 * */
+	char path[STRLEN];
+	/*!
+	 *"handle" for the dynamic library. man dlopen
+	 * */
+	void *handle;
+
+	/*!
+	 *адрес функции в памяти. man dlsym
+	 */
+	void *f;
 } operations_t;
 
 /*!
